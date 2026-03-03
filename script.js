@@ -1,44 +1,47 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Navigation logic
     const navLinks = document.querySelectorAll('.nav-link');
-    const sections = document.querySelectorAll('.content-section');
+    const sections = document.querySelectorAll('section[id]');
+    const header = document.querySelector('header');
 
+    // Smooth scroll for navigation links
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
-            const href = link.getAttribute('href');
-            if (href.startsWith('#')) {
-                e.preventDefault();
-                
-                // Remove active class from all links
-                navLinks.forEach(nav => nav.classList.remove('active'));
-                
-                // Add active class to clicked link
-                link.classList.add('active');
-                
-                // Hide all sections
-                sections.forEach(section => {
-                    section.classList.remove('active-section');
+            e.preventDefault();
+            const targetId = link.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+
+            if (targetSection) {
+                const headerHeight = header.offsetHeight;
+                const targetPosition = targetSection.offsetTop - headerHeight;
+
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
                 });
-                
-                // Show target section
-                const targetId = href.substring(1);
-                const targetSection = document.getElementById(targetId);
-                
-                if (targetSection) {
-                    targetSection.classList.add('active-section');
-                    // Update URL fragment without jumping
-                    history.pushState(null, null, href);
-                }
             }
         });
     });
 
-    // Check fragment on load
-    if (window.location.hash) {
-        const hash = window.location.hash;
-        const targetLink = document.querySelector(`.nav-link[href="${hash}"]`);
-        if (targetLink) {
-            targetLink.click();
-        }
-    }
+    // Scroll spy to update active link
+    const scrollSpy = () => {
+        const scrollPosition = window.scrollY + header.offsetHeight + 10;
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.offsetHeight;
+            const sectionId = section.getAttribute('id');
+            const correspondingLink = document.querySelector(`.nav-link[href="#${sectionId}"]`);
+
+            if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                navLinks.forEach(link => link.classList.remove('active'));
+                if (correspondingLink) {
+                    correspondingLink.classList.add('active');
+                }
+            }
+        });
+    };
+
+    window.addEventListener('scroll', scrollSpy);
+    // Trigger once on load
+    scrollSpy();
 });
