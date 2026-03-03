@@ -4,269 +4,204 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Academic & Professional Portfolio of Sunita Priyadarshini Sahoo.">
-    <title>Sunita Priyadarshini Sahoo - Portfolio</title>
+    <meta name="description" content="Academic & Professional Portfolio of Sunita Priyadarshini.">
+    <title>Sunita Priyadarshini - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
-    <div class="layout-container">
-        <!-- Sidebar Navigation -->
-        <aside class="sidebar">
-            <div class="sidebar-content">
-                <div class="profile">
-                    <div class="profile-image-container">
-                        <img src="profile.png" alt="Sunita Priyadarshini Sahoo" class="profile-img" id="profile-pic">
-                    </div>
-                    <h1 class="name">Sunita Priyadarshini</h1>
-                    <p class="role">M.A. Social Work Candidate</p>
-                    <p class="affiliation">TISS, Mumbai</p>
+    <header>
+        <div class="nav-container">
+            <div class="logo">SP</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about" class="nav-link active">About</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="profile-image-container">
+                <img src="profile.png" alt="Sunita Priyadarshini" class="profile-img">
+            </div>
+            <h1>Sunita Priyadarshini</h1>
+            <p class="subtitle">M.A. Social Work Candidate • TISS, Mumbai</p>
+
+            <div class="contact-links">
+                <a href="mailto:sunitapriyadarshini346@gmail.com" title="Email">
+                    Email
+                </a>
+                <span>•</span>
+                <a href="https://www.linkedin.com/in/sunita-priyadarshini-0352aa378" target="_blank" title="LinkedIn">
+                    LinkedIn
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2 class="section-title">Professional Summary</h2>
+            <div class="content-text">
+                <p class="lead-text">
+                    Postgraduate student pursuing an M.A. in Social Work (Community Organisation and Development
+                    Practice) at TISS, Mumbai.
+                </p>
+                <p>
+                    I have extensive experience in community development, social research, and stakeholder
+                    engagement. My core strengths lie in documentation, reporting, and professional presentations,
+                    coupled with a highly focused interest in CSR initiatives, research organisations, and social
+                    impact consulting.
+                </p>
+                <p>
+                    Currently leveraging community organisation and data-driven methodologies to drive sustainable rural
+                    and livelihood development programs.
+                </p>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <h2 class="section-title">Work Experience</h2>
+
+            <div class="item-card">
+                <div class="item-header">
+                    <h3>Research & Programme Support Intern</h3>
+                    <span class="item-date">Dec 2025 – Jan 2026</span>
                 </div>
+                <p class="item-sub">iStat Consultancy (Supporting Fairtrade NAPP International)</p>
+                <ul class="item-details">
+                    <li>Coordinated communication with Fairtrade Producer Organisations regarding one-to-one
+                        training on commercial profile development.</li>
+                    <li>Supported documentation of training sessions and producer engagement processes.</li>
+                    <li>Contributed to Fairtrade toolkits, including the Premium Plan section with SDG mapping
+                        and participatory planning content.</li>
+                </ul>
+            </div>
 
-                <nav class="nav-menu">
-                    <ul class="nav-list">
-                        <li><a href="#about" class="nav-link active">About</a></li>
-                        <li><a href="#experience" class="nav-link">Experience</a></li>
-                        <li><a href="#education" class="nav-link">Education</a></li>
-                        <li><a href="#skills" class="nav-link">Skills & Interests</a></li>
-                    </ul>
-                </nav>
+            <div class="item-card">
+                <div class="item-header">
+                    <h3>Fieldwork Intern</h3>
+                    <span class="item-date">Aug 2025 – Present</span>
+                </div>
+                <p class="item-sub">Doctors For You (NGO), Mumbai</p>
+                <ul class="item-details">
+                    <li>Engaged with communities using participatory approaches for public health outreach
+                        initiatives.</li>
+                    <li>Assisted in organising health awareness camps and community-level programmes.</li>
+                    <li>Maintained field records, prepared reports, and designed basic IEC materials and
+                        presentations.</li>
+                </ul>
+            </div>
 
-                <div class="sidebar-footer">
-                    <div class="social-links">
-                        <!-- Email -->
-                        <a href="mailto:sunitapriyadarshini346@gmail.com" aria-label="Email" class="social-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <rect width="20" height="16" x="2" y="4" rx="2" />
-                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-                            </svg>
-                        </a>
-                        <!-- LinkedIn -->
-                        <a href="https://www.linkedin.com/in/sunita-priyadarshini-0352aa378" aria-label="LinkedIn"
-                            target="_blank" class="social-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <path
-                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-                                <rect x="2" y="9" width="4" height="12" />
-                                <circle cx="4" cy="4" r="2" />
-                            </svg>
-                        </a>
-                    </div>
-                    <p class="copyright">&copy; 2026 Sunita Priyadarshini</p>
+            <div class="item-card">
+                <div class="item-header">
+                    <h3>Academic Facilitator</h3>
+                    <span class="item-date">2022 – 2024</span>
+                </div>
+                <p class="item-sub">Vanik, Bhubaneswar</p>
+                <ul class="item-details">
+                    <li>Delivered structured instruction in sociology, emphasising analytical thinking and
+                        applied understanding.</li>
+                    <li>Developed study materials, assessment tools, and concise reference content.</li>
+                    <li>Conducted evaluations and provided structured feedback to support learner progress.</li>
+                </ul>
+            </div>
+
+            <div class="item-card">
+                <div class="item-header">
+                    <h3>Additional Experience</h3>
+                </div>
+                <ul class="item-details">
+                    <li><strong>Community Outreach Volunteer</strong> — (Bhubaneswar, 2022–2024). Supported
+                        community-based tutoring and designed outreach materials.</li>
+                    <li><strong>Independent Academic & Policy Prep</strong> — (2019–2022). Developed critical
+                        reasoning and synthesis in policy and social sciences.</li>
+                    <li><strong>Project Intern</strong> — Traffic Management System, IDCOL (Apr–Jul 2019).
+                        Supported data processing and record management.</li>
+                    <li><strong>Research Intern</strong> — Neuroscience Lab, NISER (Sept 2018–Feb 2019).
+                        Assisted in research data analysis and documentation.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2 class="section-title">Education</h2>
+
+            <div class="item-card">
+                <div class="item-header">
+                    <h3>M.A. in Social Work – Community Organisation and Development Practice</h3>
+                    <span class="item-date">2025 – 2027 (Pursuing)</span>
+                </div>
+                <p class="item-sub">Tata Institute of Social Sciences (TISS), Mumbai</p>
+            </div>
+
+            <div class="item-card">
+                <div class="item-header">
+                    <h3>M.Sc. in Biotechnology</h3>
+                    <span class="item-date">2017 – 2019</span>
+                </div>
+                <p class="item-sub">College of Basic Science and Humanities, OUAT, Bhubaneswar</p>
+                <p style="margin-top: 0.5rem; font-style: italic;">CGPA: 8.45 (Top 10% of batch)</p>
+            </div>
+
+            <div class="item-card">
+                <div class="item-header">
+                    <h3>B.Sc. in Zoology</h3>
+                    <span class="item-date">2014 – 2017</span>
+                </div>
+                <p class="item-sub">S.C.S Autonomous College, Puri, Odisha</p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2 class="section-title">Skills & Interests</h2>
+
+            <div style="margin-bottom: 3rem;">
+                <h3
+                    style="color: var(--primary-color); font-size: 1.1rem; margin-bottom: 1.5rem; text-transform: uppercase;">
+                    Core Competencies</h3>
+                <div class="skills-container">
+                    <span class="skill-tag">Social Research</span>
+                    <span class="skill-tag">Data Collection</span>
+                    <span class="skill-tag">Documentation</span>
+                    <span class="skill-tag">Report Writing</span>
+                    <span class="skill-tag">Proposal Support</span>
+                    <span class="skill-tag">Community Engagement</span>
+                    <span class="skill-tag">Stakeholder Management</span>
+                    <span class="skill-tag">Field Operations</span>
+                    <span class="skill-tag">IEC Development</span>
+                    <span class="skill-tag">MS Office Suite</span>
+                    <span class="skill-tag">Canva & PPT Design</span>
+                    <span class="skill-tag">AI Prompt Engineering</span>
                 </div>
             </div>
-        </aside>
 
-        <!-- Main Content Area -->
-        <main class="main-content">
-            <section id="about" class="content-section active-section">
-                <h2 class="section-title">Professional Summary</h2>
-                <div class="text-content">
-                    <p class="lead-text">
-                        Postgraduate student pursuing an M.A. in Social Work (Community Organisation and Development
-                        Practice) at TISS, Mumbai.
-                    </p>
-                    <p>
-                        I have extensive experience in community development, social research, and stakeholder
-                        engagement. My core strengths lie in documentation, reporting, and professional presentations,
-                        coupled with a highly focused interest in CSR initiatives, research organisations, and social
-                        impact consulting.
-                    </p>
-                </div>
+            <div>
+                <h3
+                    style="color: var(--primary-color); font-size: 1.1rem; margin-bottom: 1.5rem; text-transform: uppercase;">
+                    Languages</h3>
+                <p>English (Fluent) • Hindi (Fluent) • Odia (Native)</p>
+            </div>
+        </section>
+    </main>
 
-                <div class="highlights">
-                    <div class="highlight-card">
-                        <div class="card-icon">🎯</div>
-                        <h3>Current Objective</h3>
-                        <p>Leveraging community organisation and data-driven methodologies to drive sustainable rural
-                            and livelihood development programs.</p>
-                    </div>
-                </div>
-            </section>
+    <footer>
+        <p>&copy; 2026 Sunita Priyadarshini. All rights reserved.</p>
+    </footer>
 
-            <section id="experience" class="content-section">
-                <h2 class="section-title">Work Experience</h2>
-                <div class="text-content">
-
-                    <div style="margin-bottom: 2.5rem;">
-                        <h3
-                            style="font-family: var(--font-sans); color: var(--ink); font-size: 1.15rem; margin-bottom: 0.25rem;">
-                            Research & Programme Support Intern
-                        </h3>
-                        <p
-                            style="font-size: 0.95rem; color: var(--crimson); font-weight: 500; margin-bottom: 0.5rem; font-family: var(--font-sans);">
-                            iStat Consultancy (Supporting Fairtrade NAPP International) | Dec 2025 – Jan 2026
-                        </p>
-                        <ul style="padding-left: 1.5rem; font-size: 0.95rem; color: var(--text-main);">
-                            <li>Coordinated communication with Fairtrade Producer Organisations regarding one-to-one
-                                training on commercial profile development.</li>
-                            <li>Supported documentation of training sessions and producer engagement processes.</li>
-                            <li>Contributed to Fairtrade toolkits, including the Premium Plan section with SDG mapping
-                                and participatory planning content.</li>
-                        </ul>
-                    </div>
-
-                    <div style="margin-bottom: 2.5rem;">
-                        <h3
-                            style="font-family: var(--font-sans); color: var(--ink); font-size: 1.15rem; margin-bottom: 0.25rem;">
-                            Fieldwork Intern
-                        </h3>
-                        <p
-                            style="font-size: 0.95rem; color: var(--crimson); font-weight: 500; margin-bottom: 0.5rem; font-family: var(--font-sans);">
-                            Doctors For You (NGO), Mumbai | Aug 2025 – Present
-                        </p>
-                        <ul style="padding-left: 1.5rem; font-size: 0.95rem; color: var(--text-main);">
-                            <li>Engaged with communities using participatory approaches for public health outreach
-                                initiatives.</li>
-                            <li>Assisted in organising health awareness camps and community-level programmes.</li>
-                            <li>Maintained field records, prepared reports, and designed basic IEC materials and
-                                presentations.</li>
-                        </ul>
-                    </div>
-
-                    <div style="margin-bottom: 2.5rem;">
-                        <h3
-                            style="font-family: var(--font-sans); color: var(--ink); font-size: 1.15rem; margin-bottom: 0.25rem;">
-                            Academic Facilitator
-                        </h3>
-                        <p
-                            style="font-size: 0.95rem; color: var(--crimson); font-weight: 500; margin-bottom: 0.5rem; font-family: var(--font-sans);">
-                            Vanik, Bhubaneswar | 2022 – 2024
-                        </p>
-                        <ul style="padding-left: 1.5rem; font-size: 0.95rem; color: var(--text-main);">
-                            <li>Delivered structured instruction in sociology, emphasising analytical thinking and
-                                applied understanding.</li>
-                            <li>Developed study materials, assessment tools, and concise reference content.</li>
-                            <li>Conducted evaluations and provided structured feedback to support learner progress.</li>
-                        </ul>
-                    </div>
-
-                    <div style="margin-bottom: 2.5rem;">
-                        <h3
-                            style="font-family: var(--font-sans); color: var(--ink); font-size: 1.15rem; margin-bottom: 0.25rem;">
-                            Additional Experience
-                        </h3>
-                        <ul
-                            style="padding-left: 1.5rem; font-size: 0.95rem; color: var(--text-main); line-height: 1.8;">
-                            <li><strong>Community Outreach Volunteer</strong> — (Bhubaneswar, 2022–2024). Supported
-                                community-based tutoring and designed outreach materials.</li>
-                            <li><strong>Independent Academic & Policy Prep</strong> — (2019–2022). Developed critical
-                                reasoning and synthesis in policy and social sciences.</li>
-                            <li><strong>Project Intern</strong> — Traffic Management System, IDCOL (Apr–Jul 2019).
-                                Supported data processing and record management.</li>
-                            <li><strong>Research Intern</strong> — Neuroscience Lab, NISER (Sept 2018–Feb 2019).
-                                Assisted in research data analysis and documentation.</li>
-                        </ul>
-                    </div>
-
-                </div>
-            </section>
-
-            <section id="education" class="content-section">
-                <h2 class="section-title">Education</h2>
-                <div class="text-content">
-
-                    <div style="margin-bottom: 2rem;">
-                        <h3
-                            style="font-family: var(--font-sans); color: var(--ink); font-size: 1.1rem; margin-bottom: 0.25rem;">
-                            Master of Arts (M.A.) in Social Work – Community Organisation and Development Practice
-                        </h3>
-                        <p style="font-size: 0.95rem; color: var(--text-light); font-family: var(--font-sans);">
-                            Tata Institute of Social Sciences (TISS), Mumbai | <strong>2025 – 2027 (Pursuing)</strong>
-                        </p>
-                    </div>
-
-                    <div style="margin-bottom: 2rem;">
-                        <h3
-                            style="font-family: var(--font-sans); color: var(--ink); font-size: 1.1rem; margin-bottom: 0.25rem;">
-                            Master of Science (M.Sc.) in Biotechnology
-                        </h3>
-                        <p style="font-size: 0.95rem; color: var(--text-light); font-family: var(--font-sans);">
-                            College of Basic Science and Humanities, OUAT, Bhubaneswar | <strong>2017 – 2019</strong>
-                        </p>
-                        <p style="font-size: 0.9rem; margin-top: 0.25rem; font-weight: 500; color: var(--text-main);">
-                            CGPA: 8.45 (Top 10% of batch)</p>
-                    </div>
-
-                    <div style="margin-bottom: 2rem;">
-                        <h3
-                            style="font-family: var(--font-sans); color: var(--ink); font-size: 1.1rem; margin-bottom: 0.25rem;">
-                            Bachelor of Science (B.Sc.) in Zoology
-                        </h3>
-                        <p style="font-size: 0.95rem; color: var(--text-light); font-family: var(--font-sans);">
-                            S.C.S Autonomous College, Puri, Odisha | <strong>2014 – 2017</strong>
-                        </p>
-                    </div>
-
-                </div>
-            </section>
-
-            <section id="skills" class="content-section">
-                <h2 class="section-title">Skills & Interests</h2>
-                <div class="text-content">
-
-                    <div style="margin-bottom: 2rem;">
-                        <h3
-                            style="font-family: var(--font-sans); color: var(--crimson); font-size: 1.15rem; margin-bottom: 0.75rem;">
-                            Core Competencies</h3>
-                        <ul
-                            style="padding-left: 1.5rem; font-size: 0.95rem; color: var(--text-main); line-height: 1.8;">
-                            <li><strong>Technical & Analytical:</strong> Social Research, Data Collection &
-                                Documentation, Report Writing, Proposal Support, MS Office Suite.</li>
-                            <li><strong>Programme & Field Operations:</strong> Community & Stakeholder Engagement,
-                                Programme Coordination & Field Operations, IEC & Outreach Material Development.</li>
-                            <li><strong>Communication & Design:</strong> Professional Communication, Presentation Deck
-                                Design (PowerPoint, Canva).</li>
-                            <li><strong>Digital & AI Tools:</strong> AI Tools & Prompt Engineering.</li>
-                        </ul>
-                    </div>
-
-                    <div style="margin-bottom: 2rem;">
-                        <h3
-                            style="font-family: var(--font-sans); color: var(--crimson); font-size: 1.15rem; margin-bottom: 0.75rem;">
-                            Areas of Interest</h3>
-                        <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
-                            <span
-                                style="background: var(--shade); border: 1px solid var(--border-color); padding: 0.35rem 0.75rem; border-radius: 20px; font-size: 0.85rem;">Social
-                                Research</span>
-                            <span
-                                style="background: var(--shade); border: 1px solid var(--border-color); padding: 0.35rem 0.75rem; border-radius: 20px; font-size: 0.85rem;">Impact
-                                Consulting</span>
-                            <span
-                                style="background: var(--shade); border: 1px solid var(--border-color); padding: 0.35rem 0.75rem; border-radius: 20px; font-size: 0.85rem;">CSR
-                                & ESG Initiatives</span>
-                            <span
-                                style="background: var(--shade); border: 1px solid var(--border-color); padding: 0.35rem 0.75rem; border-radius: 20px; font-size: 0.85rem;">Community
-                                Development</span>
-                            <span
-                                style="background: var(--shade); border: 1px solid var(--border-color); padding: 0.35rem 0.75rem; border-radius: 20px; font-size: 0.85rem;">Public
-                                Health</span>
-                            <span
-                                style="background: var(--shade); border: 1px solid var(--border-color); padding: 0.35rem 0.75rem; border-radius: 20px; font-size: 0.85rem;">Sustainable
-                                Livelihood</span>
-                        </div>
-                    </div>
-
-                    <div style="margin-bottom: 2rem;">
-                        <h3
-                            style="font-family: var(--font-sans); color: var(--crimson); font-size: 1.15rem; margin-bottom: 0.75rem;">
-                            Languages</h3>
-                        <p style="font-size: 0.95rem;">English (Fluent) • Hindi (Fluent) • Odia (Native)</p>
-                    </div>
-
-                </div>
-            </section>
-        </main>
-    </div>
     <script src="script.js"></script>
 </body>
 
