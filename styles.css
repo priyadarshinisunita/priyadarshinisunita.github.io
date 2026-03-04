@@ -203,6 +203,109 @@ section {
   color: var(--primary-color);
 }
 
+/* Expert Sidebar Contacts */
+.side-contacts {
+  position: fixed;
+  left: 40px;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  z-index: 100;
+  animation: slideUp 1s ease-out forwards;
+}
+
+.side-contacts-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.side-contacts-line {
+  width: 1.5px;
+  height: 90px;
+  background-color: var(--primary-color);
+  order: 2;
+}
+
+.side-icon {
+  color: var(--text-color);
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.7;
+}
+
+.side-icon:hover {
+  color: var(--primary-color);
+  transform: translateY(-5px);
+  opacity: 1;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Connect Section (Expert Minimalist) */
+.connect-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.connect-message {
+  font-size: 1.15rem;
+  color: var(--text-light);
+  margin-bottom: 2.5rem;
+  font-style: italic;
+  line-height: 1.8;
+}
+
+.connect-minimal-links {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.9rem;
+}
+
+.link-minimal {
+  color: var(--text-color);
+  text-decoration: none;
+  border-bottom: 1.5px solid transparent;
+  transition: var(--transition);
+}
+
+.link-minimal:hover {
+  color: var(--primary-color);
+  border-bottom-color: var(--primary-color);
+}
+
+.separator {
+  color: var(--border-color);
+}
+
+/* Hide sidebar on mobile for elite focus */
+@media (max-width: 1200px) {
+  .side-contacts {
+    display: none;
+  }
+}
+
 /* Footer */
 footer {
   max-width: var(--container-width);
